@@ -20,7 +20,7 @@ public class WagonTest extends BaseTest{
 		
 	}
 
-	@Test
+	//@Test
 	public void test2_wagon_DUPLICATE() {
 		
 	}

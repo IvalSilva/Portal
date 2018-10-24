@@ -17,10 +17,17 @@ public class LocomotiveModelTest extends BaseTest{
 	DriverFactory jse = new DriverFactory();
 	
 	
+	
+	/*
+	 * The test case bellow insert new model locomotive
+	 * 
+	 */
 	@Test
 	public void test1_locomotivemodel_NEW() {
 		menuPage.acessarTelaLocomotiveModel();
 		
+		jse.testescroll();
+
 		locomotivemodelPage.clicarBotaoNewLocoModel();
 		
 		
@@ -62,13 +69,20 @@ public class LocomotiveModelTest extends BaseTest{
 			
 	}
 	
+	/*
+	 * Update test case
+	 */
+	
 	//@Test
 	public void test2_locomotivemodel_DUPLICATE() {
 
 		menuPage.acessarTelaLocomotiveModel();
-		
+
+		jse.testescroll();
+
 		locomotivemodelPage.clicarBotaoNewLocoModel();
-		
+
+
 		locomotivemodelPage.setConsumoLowIdle("1000");;
 		locomotivemodelPage.setConsumoIdle("2000");
 		locomotivemodelPage.setConsumoDinamico("3000");
